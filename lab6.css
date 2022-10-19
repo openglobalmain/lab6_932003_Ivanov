@@ -16,11 +16,13 @@ body{
     align-content: space-between;
 }
 .sliding-button {
+    text-align: center;
     text-decoration: none;
     color: white;
     display: inline-block;
     position: relative;
-    padding: 15px 105px;
+    padding: 15px;
+    width: 298px;
     margin: 0 1px;
     border: 1px solid;
     border-image: linear-gradient(180deg, #ff3000, #a50300, #720000, #1D1B26);
@@ -36,13 +38,10 @@ body{
     top: 0;
     height: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
     color: white;
     background: linear-gradient(180deg, #ff3000, #b40300, #830000, #1D1B26);
     transition: .8s cubic-bezier(.165, .84, .44, 1);
-  }
-  .sliding-button:active > img {
-    transform: scale(1.3);
   }
   .sliding-button:hover {
     background: rgba(255, 0, 0, 0);
@@ -58,30 +57,22 @@ img{
     margin: 20px;
 }
 .columns{
-    width:100%;
     height:480px;
     margin: 5px 0;
     display: flex;
 
 }
 .column{
-    width:100%;
-    height:100%;
     padding: 1px;
     border: 1px solid;
     border-image: linear-gradient(180deg, #ff3000, #a50300, #720000, #1D1B26);
     border-image-slice: 1;
 }
-.columns#left_column{
-    width: 50%;
-    background-color: blue;
-    float: left;
-    
+#left_column{
+    width:50%
 
 }
-.columns#right_column{
+#right_column{
     width: 50%;
-    background-color: green;
-    float: right
 }
 
