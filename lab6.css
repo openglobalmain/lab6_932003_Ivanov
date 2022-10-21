@@ -1,5 +1,4 @@
 body{
-    height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -57,7 +56,6 @@ img{
     margin: 20px;
 }
 .columns{
-    height:480px;
     margin: 5px 0;
     display: flex;
 
